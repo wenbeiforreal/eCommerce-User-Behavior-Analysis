@@ -20,10 +20,10 @@ Briefly, we applied four approaches to tackle the aforementioned issues. To defi
 1. As the column information shows that columns &quot;category\_code&quot;, &quot;brand&quot;, and &quot;user\_session&quot; contain missing values, which impacts the dataset as a whole for further analysis. We decided to first drop all NaN values for both datasets.
 2. Union the two data frames as the raw data
 3.
-  1. Drop unnecessary columns
-  2. create a new data frame
-  3. query only the purchase event type
-  4. Convert event\_time to DateTime
+  a. Drop unnecessary columns
+  b. create a new data frame
+  c. query only the purchase event type
+  d. Convert event\_time to DateTime
 4. Aggregate data by user\_session
 5. RFM analysis - recency, frequency, and monetary calculation
 6. RFM data description
@@ -33,25 +33,17 @@ Briefly, we applied four approaches to tackle the aforementioned issues. To defi
 
 ###### Part II - Apriori Model
 
-1.
-
-Generate a new data frame for Apriori analysis only
-
-Split the category\_code column by the period, &#39;.&#39;, and create a new column named items
-
-Create a new data frame for user\_id and items
-
-1. Find the frequency of the items bought
-2. Visualize the frequency of the items bought
-3.
-
-Create a new data frame with event\_time added
-
-Group the data frame by user\_id and event\_time, and concatenate the items bought
-
-Apply apriori model with:
-
+1. 
+  a. Generate a new data frame for Apriori analysis only
+  b. Split the category\_code column by the period, &#39;.&#39;, and create a new column named items
+  c. Create a new data frame for user\_id and items
+2. Find the frequency of the items bought
+3. Visualize the frequency of the items bought
+4.
+  a. Create a new data frame with event\_time added
+  b. Group the data frame by user\_id and event\_time, and concatenate the items bought
+5. Apply apriori model with:
     1. Min\_support = 0.005: so that the itemset occurs in 0.5% of the transactions.
     2. Min\_confidence = 0.2: so that we know 20% of the times a customer also bought such item before and after.
     3. Min\_length = 2: so the least number of items that a rule should have is 2.
-1. Display all the RelationRecord of the association rule.
+6. Display all the RelationRecord of the association rule.
