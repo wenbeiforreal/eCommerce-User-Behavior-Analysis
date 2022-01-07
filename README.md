@@ -34,16 +34,19 @@ Briefly, we applied four approaches to tackle the aforementioned issues. To defi
 ###### Part II - Apriori Model
 
 1. 
-  a. Generate a new data frame for Apriori analysis only
-  b. Split the category\_code column by the period, &#39;.&#39;, and create a new column named items
-  c. Create a new data frame for user\_id and items
+  - Generate a new data frame for Apriori analysis only
+  - Split the category\_code column by the period, &#39;.&#39;, and create a new column named items
+  - Create a new data frame for user\_id and items
 2. Find the frequency of the items bought
 3. Visualize the frequency of the items bought
 4.
-  a. Create a new data frame with event\_time added
-  b. Group the data frame by user\_id and event\_time, and concatenate the items bought
+  - Create a new data frame with event\_time added
+  - Group the data frame by user\_id and event\_time, and concatenate the items bought
 5. Apply apriori model with:
-    1. Min\_support = 0.005: so that the itemset occurs in 0.5% of the transactions.
-    2. Min\_confidence = 0.2: so that we know 20% of the times a customer also bought such item before and after.
-    3. Min\_length = 2: so the least number of items that a rule should have is 2.
+  - Min\_support = 0.005: so that the itemset occurs in 0.5% of the transactions.
+  - Min\_confidence = 0.2: so that we know 20% of the times a customer also bought such item before and after.
+  - Min\_length = 2: so the least number of items that a rule should have is 2.
 6. Display all the RelationRecord of the association rule.
+
+#### Results
+
