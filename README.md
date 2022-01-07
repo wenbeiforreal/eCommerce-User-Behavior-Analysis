@@ -48,5 +48,3 @@ Briefly, we applied four approaches to tackle the aforementioned issues. To defi
   - Min\_length = 2: so the least number of items that a rule should have is 2.
 6. Display all the RelationRecord of the association rule.
 
-#### Results
-
