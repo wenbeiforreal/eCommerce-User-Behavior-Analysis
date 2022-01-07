@@ -20,10 +20,10 @@ Briefly, we applied four approaches to tackle the aforementioned issues. To defi
 1. As the column information shows that columns &quot;category\_code&quot;, &quot;brand&quot;, and &quot;user\_session&quot; contain missing values, which impacts the dataset as a whole for further analysis. We decided to first drop all NaN values for both datasets.
 2. Union the two data frames as the raw data
 3.
-  a. Drop unnecessary columns
-  b. create a new data frame
-  c. query only the purchase event type
-  d. Convert event\_time to DateTime
+  - Drop unnecessary columns
+  - create a new data frame
+  - query only the purchase event type
+  - Convert event\_time to DateTime
 4. Aggregate data by user\_session
 5. RFM analysis - recency, frequency, and monetary calculation
 6. RFM data description
